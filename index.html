@@ -12,11 +12,12 @@
     />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <title>Document</title>
+    <script defer src="./index.js"></script>
   </head>
   <body class="bg-gray-100 font-poppins overflow-x-hidden w-full h-screen">
     <!-- Header/nav Section -->
     <header
-      class="bg-blue-400 header flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit"
+      class="header flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit"
     >
       <div>
         <h1 class="text-2xl cursor-pointer">logo</h1>
@@ -60,42 +61,41 @@
           />
         </div>
       </div>
-
-      <!-- <div class="w-2/3 h-fit text-left mb-10">
-        <h1 class="text-6xl">This the main heading</h1>
-        <p class="text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus?
-        </p>
-      </div>
-      <div class="w-fit h-fit pb-20">
-        <img src="https://placehold.jp/400x400.png" alt="image" />
-      </div> -->
     </section>
     <!-- About Us Section -->
     <section id="aboutus">
-      <div class="grid grid-cols-1 justify-center py-20 px-10">
+      <div class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10">
         <div class="text-center">
-          <h2 class="text-8xl">About Us</h2>
+          <h2 class="text-8xl tracking-[1.5rem]">About Us</h2>
         </div>
         <div
-          class="mt-10 p-10 grid grid-cols-2 justify-items-center gap-10 w-full"
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
         >
-          <p class="w-2/3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
-            inventore modi earum nesciunt ducimus. Dolores debitis quasi nemo
-            aliquid, inventore cumque, vel assumenda obcaecati reiciendis,
-            fugiat magnam animi sed voluptatem tempora recusandae officiis
-            aspernatur libero reprehenderit? Iste repellendus esse quidem
-            voluptas quaerat aliquam dolores, ipsa corrupti quo? Culpa
-            voluptatem omnis, rem illum delectus quas distinctio alias
-            cupiditate, in veniam, quasi recusandae perspiciatis facilis ipsum
-            ratione nostrum nobis. Inventore voluptatibus nostrum et maiores at
-            quae exercitationem porro saepe dolorum aliquam iusto provident,
-            repellendus eligendi eius alias sit harum! Amet eaque voluptate
-            autem labore ullam at sunt eveniet, accusantium quidem repellendus
-            esse!
-          </p>
-          <img src="https://placehold.jp/400x400.png" alt="image" />
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+            >
+              Lorem ipsum dolor sit amet.
+              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
+            </h1>
+            <p class="mb-8 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
+              aut, earum harum maxime odio exercitationem nemo eveniet porro
+              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
+              facilis quis in, repellat doloribus vel officia velit architecto
+              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
+              doloremque dolorum molestias laboriosam? Molestiae!
+            </p>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="https://dummyimage.com/720x600"
+            />
+          </div>
         </div>
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex flex-wrap md:-m-2 -m-1">
@@ -153,67 +153,101 @@
     <section id="ourcompanies">
       <div class="grid grid-cols-1 justify-center py-20 px-10">
         <div class="text-center">
-          <h2 class="text-8xl">Our Companies</h2>
+          <h2 class="text-8xl tracking-[1.5rem]">Our Companies</h2>
         </div>
-        <div class="bg-gray-300 w-full grid grid-cols-3 py-4 my-32">
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        >
           <div
-            class="py-8 px-12 my-10 transform transition duration-300 ease-in-out hover:-translate-y-2 text-center"
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
           >
-            <div class="inline-block text-gray-900 mb-4">
-              <!-- icon -->
-              <h2>logo</h2>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-              company 1
-            </h3>
-            <p class="text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+            >
+              Lorem ipsum dolor sit amet.
+              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
+            </h1>
+            <p class="mb-8 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
+              aut, earum harum maxime odio exercitationem nemo eveniet porro
+              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
+              facilis quis in, repellat doloribus vel officia velit architecto
+              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
+              doloremque dolorum molestias laboriosam? Molestiae!
             </p>
-            <button class="bg-blue-400 rounded-xl my-2 p-2 text-xl font-medium">
-              Visit Now
-            </button>
           </div>
-          <div
-            class="py-8 px-12 my-10 transform transition duration-300 ease-in-out hover:-translate-y-2 text-center"
-          >
-            <div class="inline-block text-gray-900 mb-4">
-              <!-- icon -->
-              <h2>logo</h2>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-              company 2
-            </h3>
-            <p class="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-            <button class="bg-blue-400 rounded-xl my-2 p-2 text-xl font-medium">
-              Visit Now
-            </button>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="https://dummyimage.com/720x600"
+            />
           </div>
+        </div>
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row-reverse flex-col items-center"
+        >
           <div
-            class="py-8 px-12 my-10 transform transition duration-300 ease-in-out hover:-translate-y-2 text-center"
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
           >
-            <div class="inline-block text-gray-900 mb-4">
-              <!-- icon -->
-              <h2>logo</h2>
-            </div>
-            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">
-              company3
-            </h3>
-            <p class="text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+            >
+              Lorem ipsum dolor sit amet.
+              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
+            </h1>
+            <p class="mb-8 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
+              aut, earum harum maxime odio exercitationem nemo eveniet porro
+              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
+              facilis quis in, repellat doloribus vel officia velit architecto
+              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
+              doloremque dolorum molestias laboriosam? Molestiae!
             </p>
-            <button class="bg-blue-400 rounded-xl my-2 p-2 text-xl font-medium">
-              Visit Now
-            </button>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="https://dummyimage.com/720x600"
+            />
+          </div>
+        </div>
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        >
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+            >
+              Lorem ipsum dolor sit amet.
+              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
+            </h1>
+            <p class="mb-8 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
+              aut, earum harum maxime odio exercitationem nemo eveniet porro
+              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
+              facilis quis in, repellat doloribus vel officia velit architecto
+              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
+              doloremque dolorum molestias laboriosam? Molestiae!
+            </p>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="https://dummyimage.com/720x600"
+            />
           </div>
         </div>
       </div>
     </section>
     <!-- Testimonial Section -->
-    <section class="grid grid-cols-1 justify-center py-20 px-10">
-      <div class="text-5xl font-medium text-center">
-        <h3>Testimonials</h3>
+    <section class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10">
+      <div class="text-center">
+        <h2 class="text-8xl tracking-[1.5rem]">Testimonial</h2>
       </div>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
@@ -290,12 +324,10 @@
     <!-- Contact Us Section -->
     <section id="contactus">
       <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-6xl text-2xl font-medium title-font text-gray-900">
-            Contact Us
-          </h1>
+        <div class="text-center">
+          <h2 class="text-8xl tracking-[1.5rem]">Contact US</h2>
         </div>
-        <div class="flex flex-wrap -m-4">
+        <div class="flex flex-wrap py-36">
           <div class="p-4 md:w-1/3">
             <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
               <div class="flex items-center mb-3">
@@ -336,24 +368,22 @@
       </div>
     </section>
     <!-- footer Section -->
-    <footer id="footer">
+    <footer id="footer" class="bg-gray-800">
       <div
-        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+        class="container px-5 py-14 mx-auto flex items-center sm:flex-row flex-col"
       >
         <a
-          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
         >
           <span class="ml-3 text-xl">Logo</span>
         </a>
-        <p
-          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
-        >
+        <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-6">
           © 2022 company name
         </p>
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
         >
-          <a class="text-gray-500">
+          <a class="text-gray-200">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -367,7 +397,7 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-200">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -381,7 +411,7 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-200">
             <svg
               fill="none"
               stroke="currentColor"
@@ -395,23 +425,6 @@
               <path
                 d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
               ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
         </span>
