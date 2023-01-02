@@ -20,14 +20,15 @@
       class="header bg-gray-700 flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit"
     >
       <div>
-        <h1 class="text-2xl cursor-pointer">logo</h1>
+        <img src="" height="100vh" alt="Logo"/>
       </div>
       <div class="flex">
         <nav class="hidden md:flex md:justify-between md:items-center">
-          <a href="#" class="cursor-pointer text-lg">Home</a>
-          <a href="#" class="ml-4 cursor-pointer text-lg">About Us</a>
-          <a href="#" class="ml-4 cursor-pointer text-lg">Our Companies</a>
-          <a href="#" class="ml-4 cursor-pointer text-lg">Contact Us</a>
+          <a href="#hero" class="cursor-pointer text-lg">Home</a>
+          <a href="#aboutus" class="ml-4 cursor-pointer text-lg">About Us</a>
+          <a href="#ourcompanies" class="ml-4 cursor-pointer text-lg">Our Companies</a>
+          <a href="#testimonials" class="ml-4 cursor-pointer text-lg">Testimonial</a>
+          <a href="#contactus" class="ml-4 cursor-pointer text-lg">Contact Us</a>
         </nav>
         <!-- hamburger menu -->
         <button class="block btn-open w-8 md:hidden">
@@ -42,10 +43,11 @@
             id="menu"
             class="w-full h-screen absolute hidden top-4 left-0 flex-col justify-center items-center self-end pb-20 mt-12 space-y-6 font-bold bg-white sm:self-center drop-shadow-md opacity-[0.7]"
           >
-            <a href="#" class="cursor-pointer text-2xl">Home</a>
+            <a href="#hero" class="cursor-pointer text-2xl">Home</a>
             <a href="#aboutus" class="cursor-pointer text-2xl">About Us</a>
-            <a href="#" class="cursor-pointer text-2xl">Our Companies</a>
-            <a href="#" class="cursor-pointer text-2xl">Contact Us</a>
+            <a href="#ourcompanies" class="cursor-pointer text-2xl">Our Companies</a>
+            <a href="#testimonials" class="ml-4 cursor-pointer text-2xl">Testimonial</a>
+            <a href="#contactus" class="cursor-pointer text-2xl">Contact Us</a>
           </div>
         </div>
       </div>
@@ -53,7 +55,7 @@
     <!-- home/hero Section -->
     <section
       id="hero"
-      class="w-full h-auto md:h-screen bg-hero-wave bg-no-repeat bg-right-bottom bg-contain"
+      class="w-full h-auto md:h-screen bg-hero-wave  bg-no-repeat bg-right-bottom bg-contain"
     >
       <div
         class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
@@ -74,9 +76,9 @@
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            class="w-full h-auto object-cover object-center rounded"
+            class="w-full h-auto object-cover object-cente r rounded"
             alt="hero"
-            src="https://dummyimage.com/720x600"
+            src=""
           />
         </div>
       </div>
@@ -287,7 +289,7 @@
       </div>
     </section>
     <!-- Testimonial Section -->
-    <section class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10">
+    <section class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10" id="testimonials">
       <div class="text-center">
         <h2
           class="text-3xl md:text-4xl lg:text-8xl font-inter font-bold md:tracking-[1.5rem]"
