@@ -17,24 +17,43 @@
   <body class="bg-gray-100 font-poppins overflow-x-hidden w-full h-screen">
     <!-- Header/nav Section -->
     <header
-      class="header flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit"
+      class="header bg-gray-700 flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit"
     >
       <div>
         <h1 class="text-2xl cursor-pointer">logo</h1>
       </div>
-      <div>
-        <nav class="md:flex md:justify-between md:items-center hidden">
+      <div class="flex">
+        <nav class="hidden md:flex md:justify-between md:items-center">
           <a href="#" class="cursor-pointer text-lg">Home</a>
           <a href="#" class="ml-4 cursor-pointer text-lg">About Us</a>
           <a href="#" class="ml-4 cursor-pointer text-lg">Our Companies</a>
           <a href="#" class="ml-4 cursor-pointer text-lg">Contact Us</a>
         </nav>
+        <!-- hamburger menu -->
+        <button class="block btn-open w-8 md:hidden">
+          <img src="./images/bars.svg" alt="bars" />
+        </button>
+        <button class="btn-close w-5 hidden md:hidden">
+          <img src="./images/xmark.svg" alt="xmark" />
+        </button>
+
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="w-full h-screen absolute hidden top-4 left-0 flex-col justify-center items-center self-end pb-20 mt-12 space-y-6 font-bold bg-white sm:self-center drop-shadow-md opacity-[0.7]"
+          >
+            <a href="#" class="cursor-pointer text-2xl">Home</a>
+            <a href="#aboutus" class="cursor-pointer text-2xl">About Us</a>
+            <a href="#" class="cursor-pointer text-2xl">Our Companies</a>
+            <a href="#" class="cursor-pointer text-2xl">Contact Us</a>
+          </div>
+        </div>
       </div>
     </header>
     <!-- home/hero Section -->
     <section
       id="hero"
-      class="w-full h-screen bg-hero-wave bg-no-repeat bg-right-bottom bg-contain"
+      class="w-full h-auto md:h-screen bg-hero-wave bg-no-repeat bg-right-bottom bg-contain"
     >
       <div
         class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
@@ -55,7 +74,7 @@
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            class="object-cover object-center rounded"
+            class="w-full h-auto object-cover object-center rounded"
             alt="hero"
             src="https://dummyimage.com/720x600"
           />
@@ -66,7 +85,11 @@
     <section id="aboutus">
       <div class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10">
         <div class="text-center">
-          <h2 class="text-8xl tracking-[1.5rem]">About Us</h2>
+          <h2
+            class="text-3xl md:text-4xl lg:text-8xl font-inter font-bold md:tracking-[1.5rem]"
+          >
+            About Us
+          </h2>
         </div>
         <div
           class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
@@ -91,163 +114,73 @@
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
-              class="object-cover object-center rounded"
+              class="object-cover w-full h-auto object-center rounded"
               alt="hero"
               src="https://dummyimage.com/720x600"
             />
           </div>
         </div>
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <!-- <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex flex-wrap md:-m-2 -m-1">
             <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
+              <div class="md:p-2 p-1 w-full md:w-1/2">
                 <img
                   alt="gallery"
-                  class="w-full object-cover h-full object-center block"
+                  class="w-full object-cover h-auto object-center block"
                   src="https://dummyimage.com/500x300"
                 />
               </div>
-              <div class="md:p-2 p-1 w-1/2">
+              <div class="md:p-2 p-1 w-full md:w-1/2">
                 <img
                   alt="gallery"
-                  class="w-full object-cover h-full object-center block"
+                  class="w-full object-cover h-auto object-center block"
                   src="https://dummyimage.com/501x301"
                 />
               </div>
               <div class="md:p-2 p-1 w-full">
                 <img
                   alt="gallery"
-                  class="w-full h-full object-cover object-center block"
+                  class="w-full h-auto object-cover object-center block"
                   src="https://dummyimage.com/600x360"
                 />
               </div>
             </div>
-            <div class="flex flex-wrap w-1/2">
+            <div class="flex flex-wrap w-full md:w-1/2">
               <div class="md:p-2 p-1 w-full">
                 <img
                   alt="gallery"
-                  class="w-full h-full object-cover object-center block"
+                  class="w-full h-auto object-cover object-center block"
                   src="https://dummyimage.com/601x361"
                 />
               </div>
-              <div class="md:p-2 p-1 w-1/2">
+              <div class="md:p-2 p-1 w-full md:w-1/2">
                 <img
                   alt="gallery"
-                  class="w-full object-cover h-full object-center block"
+                  class="w-full object-cover h-auto object-center block"
                   src="https://dummyimage.com/502x302"
                 />
               </div>
-              <div class="md:p-2 p-1 w-1/2">
+              <div class="md:p-2 p-1 w-full md:w-1/2">
                 <img
                   alt="gallery"
-                  class="w-full object-cover h-full object-center block"
+                  class="w-full object-cover h-auto object-center block"
                   src="https://dummyimage.com/503x303"
                 />
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
-    <!-- our companies  -->
-    <section id="ourcompanies">
-      <div class="grid grid-cols-1 justify-center py-20 px-10">
-        <div class="text-center">
-          <h2 class="text-8xl tracking-[1.5rem]">Our Companies</h2>
-        </div>
-        <div
-          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-        >
-          <div
-            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-          >
-            <h1
-              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-            >
-              Lorem ipsum dolor sit amet.
-              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
-            </h1>
-            <p class="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
-              aut, earum harum maxime odio exercitationem nemo eveniet porro
-              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
-              facilis quis in, repellat doloribus vel officia velit architecto
-              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
-              doloremque dolorum molestias laboriosam? Molestiae!
-            </p>
-          </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="https://dummyimage.com/720x600"
-            />
-          </div>
-        </div>
-        <div
-          class="container mx-auto flex px-5 py-24 md:flex-row-reverse flex-col items-center"
-        >
-          <div
-            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-          >
-            <h1
-              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-            >
-              Lorem ipsum dolor sit amet.
-              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
-            </h1>
-            <p class="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
-              aut, earum harum maxime odio exercitationem nemo eveniet porro
-              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
-              facilis quis in, repellat doloribus vel officia velit architecto
-              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
-              doloremque dolorum molestias laboriosam? Molestiae!
-            </p>
-          </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="https://dummyimage.com/720x600"
-            />
-          </div>
-        </div>
-        <div
-          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-        >
-          <div
-            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-          >
-            <h1
-              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-            >
-              Lorem ipsum dolor sit amet.
-              <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
-            </h1>
-            <p class="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus ab
-              aut, earum harum maxime odio exercitationem nemo eveniet porro
-              fugit temporibus aperiam quos! Nobis eligendi consequatur pariatur
-              facilis quis in, repellat doloribus vel officia velit architecto
-              eos aspernatur enim cum veniam quo ducimus voluptas, itaque
-              doloremque dolorum molestias laboriosam? Molestiae!
-            </p>
-          </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="https://dummyimage.com/720x600"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- Testimonial Section -->
     <section class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10">
       <div class="text-center">
-        <h2 class="text-8xl tracking-[1.5rem]">Testimonial</h2>
+        <h2
+          class="text-3xl md:text-4xl lg:text-8xl font-inter font-bold md:tracking-[1.5rem]"
+        >
+          Testimonial
+        </h2>
       </div>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
@@ -325,7 +258,11 @@
     <section id="contactus">
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center">
-          <h2 class="text-8xl tracking-[1.5rem]">Contact US</h2>
+          <h2
+            class="text-3xl md:text-4xl lg:text-8xl font-inter font-bold md:tracking-[1.5rem]"
+          >
+            Contact US
+          </h2>
         </div>
         <div class="flex flex-wrap py-36">
           <div class="p-4 md:w-1/3">
