@@ -14,7 +14,9 @@ module.exports = {
         poppins: "'Poppins', sans",
       },
       backgroundImage: {
-        'hero-wave': "url('../images/wave.svg')",
+        hero: "url('../images/hero.jpg')",
+        education: "url('../images/edu.jpg')",
+        wedding: "url('../images/wedding.jpg')",
       },
     },
   },
