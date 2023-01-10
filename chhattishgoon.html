@@ -17,17 +17,36 @@
   <body class="bg-gray-100 font-poppins overflow-x-hidden w-full h-screen">
     <!-- Header/nav Section -->
     <header
-      class="header bg-gray-700 flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit"
+      class="header bg-zinc-800 flex justify-between items-center px-4 p-2 md:px-8 md:p-4 w-full h-fit sticky"
     >
       <div>
-        <h1 class="text-2xl cursor-pointer">logo</h1>
+        <img src="" height="100vh" alt="Logo" class="cursor-pointer" />
       </div>
       <div class="flex">
-        <nav class="hidden md:flex md:justify-between md:items-center">
-          <a href="#" class="cursor-pointer text-lg">Home</a>
-          <a href="#" class="ml-4 cursor-pointer text-lg">About Us</a>
-          <a href="#" class="ml-4 cursor-pointer text-lg">Our Companies</a>
-          <a href="#" class="ml-4 cursor-pointer text-lg">Contact Us</a>
+        <nav
+          class="hidden md:flex md:justify-between md:items-center text-white"
+        >
+          <a
+            href="#hero"
+            class="cursor-pointer text-lg hover:text-xl hover:text-blue-500"
+            >Home</a
+          >
+          <a
+            href="#aboutus"
+            class="ml-4 cursor-pointer text-lg hover:text-xl hover:text-blue-500"
+            >About Us</a
+          >
+
+          <a
+            href="#testimonials"
+            class="ml-4 cursor-pointer text-lg hover:text-xl hover:text-blue-500"
+            >Testimonial</a
+          >
+          <a
+            href="#contactus"
+            class="ml-4 cursor-pointer text-lg hover:text-xl hover:text-blue-500"
+            >Contact Us</a
+          >
         </nav>
         <!-- hamburger menu -->
         <button class="block btn-open w-8 md:hidden">
@@ -40,12 +59,14 @@
         <div class="md:hidden">
           <div
             id="menu"
-            class="w-full h-screen absolute hidden top-4 left-0 flex-col justify-center items-center self-end pb-20 mt-12 space-y-6 font-bold bg-white sm:self-center drop-shadow-md opacity-[0.7]"
+            class="w-full h-screen absolute hidden top-4 left-0 flex-col justify-center items-center self-end pb-20 mt-12 space-y-6 font-bold backdrop-blur-xl bg-white sm:self-center z-10"
           >
-            <a href="#" class="cursor-pointer text-2xl">Home</a>
+            <a href="./index.html" class="cursor-pointer text-2xl">Home</a>
             <a href="#aboutus" class="cursor-pointer text-2xl">About Us</a>
-            <a href="#" class="cursor-pointer text-2xl">Our Companies</a>
-            <a href="#" class="cursor-pointer text-2xl">Contact Us</a>
+            <a href="#testimonials" class="ml-4 cursor-pointer text-2xl"
+              >Testimonial</a
+            >
+            <a href="#contactus" class="cursor-pointer text-2xl">Contact Us</a>
           </div>
         </div>
       </div>
@@ -53,31 +74,28 @@
     <!-- home/hero Section -->
     <section
       id="hero"
-      class="w-full h-auto md:h-screen bg-hero-wave bg-no-repeat bg-right-bottom bg-contain"
+      class="w-screen md:h-screen bg-wedding bg-opacity-30 bg-no-repeat bg-left-top md:bg-center bg-cover"
     >
       <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        class="container mx-auto w-full h-full flex justify-center items-center"
       >
         <div
-          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          class="mt-10 md:mt-0 lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
         >
           <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+            class="title-font sm:text-6xl md:w-2/4 text-3xl mb-4 font-medium text-white leading-3"
           >
-            Lorem ipsum dolor sit amet.
-            <br class="hidden lg:inline-block" />Lorem, ipsum dolor.
+            Rubix Quiz
+            <span class="text-2xl sm:text-5xl pb-3 text-white"
+              >Only Platform to use your knowledge and bring changes.</span
+            >
           </h1>
-          <p class="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-            vitae esse non exercitationem minus commodi?
+
+          <p class="mb-8 md:w-2/4 leading-6 text-white tracking-wide">
+            We believe that everyone has knowledge but they don't get proper
+            opportunity, that's why we are organising Rubik's Quiz Contest.
           </p>
-        </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            class="w-full h-auto object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
-          />
+
         </div>
       </div>
     </section>
@@ -120,56 +138,7 @@
             />
           </div>
         </div>
-        <!-- <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full md:w-1/2">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-auto object-center block"
-                  src="https://dummyimage.com/500x300"
-                />
-              </div>
-              <div class="md:p-2 p-1 w-full md:w-1/2">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-auto object-center block"
-                  src="https://dummyimage.com/501x301"
-                />
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <img
-                  alt="gallery"
-                  class="w-full h-auto object-cover object-center block"
-                  src="https://dummyimage.com/600x360"
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap w-full md:w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img
-                  alt="gallery"
-                  class="w-full h-auto object-cover object-center block"
-                  src="https://dummyimage.com/601x361"
-                />
-              </div>
-              <div class="md:p-2 p-1 w-full md:w-1/2">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-auto object-center block"
-                  src="https://dummyimage.com/502x302"
-                />
-              </div>
-              <div class="md:p-2 p-1 w-full md:w-1/2">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-auto object-center block"
-                  src="https://dummyimage.com/503x303"
-                />
-              </div>
-            </div>
-          </div>
-        </div> -->
+
       </div>
     </section>
     <!-- Testimonial Section -->
@@ -253,6 +222,19 @@
         </div>
       </div>
     </section>
+        <!-- T&C -->
+    <section class="bg-gray-200 grid grid-cols-1 justify-center py-20 px-10">
+      <div class="text-center">
+        <h2
+          class="text-3xl md:text-4xl lg:text-8xl font-inter font-bold md:tracking-[1.5rem]"
+        >
+          Terms and Conditions
+        </h2>
+      </div>
+      <div class="container px-5 py-24 mx-auto">
+
+      </div>
+    </section>
     <!-- Contact Us Section -->
     <section id="contactus">
       <div class="container px-5 py-24 mx-auto">
@@ -263,43 +245,87 @@
             Contact US
           </h2>
         </div>
-        <div class="flex flex-wrap py-36">
-          <div class="p-4 md:w-1/3">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+        <div class="flex flex-wrap justify-center items-center py-36">
+          <div class=" p-4 md:w-1/3 text-center">
+            <div class="  flex justify-center items-center rounded-lg h-full bg-gray-100 p-8 flex-col">
               <div class="flex items-center mb-3">
-                <h2 class="text-gray-900 text-lg title-font font-medium">
-                  Phone
+                <h2 class="text-gray-900 text-lg title-font font-medium text-center">
+                  <a href="mailto:rubicsqize@gmail.com" class="leading-relaxed text-base">            
+                  <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              /></a>
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">Lorem ipsum dolor sit.</p>
+                <a href="mailto:rubicsqize@gmail.com" class="leading-relaxed text-base">rubicsqize@gmail.com</a>
               </div>
             </div>
           </div>
-          <div class="p-4 md:w-1/3">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+          <div class=" p-4 md:w-1/3 text-center">
+            <div class="  flex justify-center items-center rounded-lg h-full bg-gray-100 p-8 flex-col">
               <div class="flex items-center mb-3">
-                <h2 class="text-gray-900 text-lg title-font font-medium">
-                  Phone
+                <h2 class="text-gray-900 text-lg title-font font-medium text-center">
+                  <a href="tel:7587060159" class="leading-relaxed text-base">   
+                    <svg xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 512 512"
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>         
+</a>
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">Lorem ipsum dolor sit.</p>
+                <a href="tel:7587060159" class="leading-relaxed text-base">+91-7587060159</a>
               </div>
             </div>
           </div>
-          <div class="p-4 md:w-1/3">
-            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+          <div class=" p-4 md:w-1/3 text-center">
+            <div class="  flex justify-center items-center rounded-lg h-full bg-gray-100 p-8 flex-col">
               <div class="flex items-center mb-3">
-                <h2 class="text-gray-900 text-lg title-font font-medium">
-                  Phone
+                <h2 class="text-gray-900 text-lg title-font font-medium text-center">
+          <a
+            href="https://www.facebook.com/people/Rubics-Quiz/100087787807064/"
+            class="text-gray-900"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
                 </h2>
               </div>
               <div class="flex-grow">
-                <p class="leading-relaxed text-base">Lorem ipsum dolor sit.</p>
+                          <a
+            href="https://www.facebook.com/people/Rubics-Quiz/100087787807064/"
+            class="text-gray-900"
+          >
+Facebook.com/Rubics-Quiz
+          </a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -314,12 +340,15 @@
           <span class="ml-3 text-xl">Logo</span>
         </a>
         <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-6">
-          © 2022 company name
+          &copy; 2023 P-Star Entertainment
         </p>
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
         >
-          <a class="text-gray-200">
+          <a
+            href="https://www.facebook.com/people/Rubics-Quiz/100087787807064/"
+            class="text-gray-200"
+          >
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -333,7 +362,7 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-200">
+          <a href="https://twitter.com/RubicsQuiz" class="ml-3 text-gray-200">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -347,20 +376,21 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-200">
+          <a href="mailto:rubicsqize@gmail.com" class="ml-3 text-gray-200">
             <svg
-              fill="none"
-              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
               class="w-5 h-5"
               viewBox="0 0 24 24"
             >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
-                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
-              ></path>
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              />
             </svg>
           </a>
         </span>
